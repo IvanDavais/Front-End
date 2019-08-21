@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- 快捷键meta:vp+tab键 -->
+
+  <!-- 
+    content="width=device-width ===>让视口的宽度等于设备的宽度 
+    user-scalable=no ===>不允许用户手动缩放
+    initial-scale=1.0 ===>初始放缩等于1.0
+    maximum-scale=1.0 ===>最大放缩为1.0
+    minimum-scale=1.0 ===>最小放缩为1.0
+    in itial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0这几个写一个就行，为什么都写呢？是为了做兼容！
+  -->
+    
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <style type="text/css">
+    .box{
+      width: 300px;
+      height: 300px;
+      background-color: gold;
+    }
+  </style>
+  <title>视口</title>
+</head>
+<body>
+  <div class="box">div中的文字</div>
+</body>
+</html>
