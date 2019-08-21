@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .menu{
+      width:694px;
+      height: 50px;
+      /*background-color: cyan;*/
+      margin: 50px auto 0;
+      font-size: 0;
+    }
+
+    /*思路：使用display:inline-block 使内联元素支持长宽*/
+    .menu a{
+      /*长宽要减去border值，所以分别变成98px和48px*/
+      width:98px;
+      height:48px;
+      background-color: #fff;
+      display: inline-block;
+      border:1px solid gold;
+      font-size: 16px;
+      margin-left: -1px;
+      line-height: 48px;
+      text-align: center;
+      text-decoration: none;
+      color:pink;
+      font-family: 'Microsoft Yahei';
+    }
+
+    .menu a:hover{
+      background-color: gold;
+      color:#fff;
+    }
+  </style>
+</head>
+<body>
+<div class="menu">
+    <a href="#">首页</a>
+    <a href="#">公司简介</a>
+    <a href="#">公司简介</a>
+    <a href="#">公司简介</a>
+    <a href="#">公司简介</a>
+    <a href="#">公司简介</a>
+    <a href="#">公司简介</a>
+  </div>  
+</body>
+</html>

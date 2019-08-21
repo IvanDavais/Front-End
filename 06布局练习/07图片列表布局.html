@@ -1,0 +1,89 @@
+<!-- ul的宽度设置得比它的父级div的宽度大时，且将ul的overflow设置成hidden，div的overflow设置成hidden。这样可以解决ul的
+每行最后一个元素因为margin大于右边剩余的空间而不得不换行 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图片列表</title>
+  <style type="text/css">
+    .pic_list_con{
+      width: 958px;
+      border: 1px solid #666;
+      margin: 50px auto 0;
+    }
+
+    .pic_list_title{
+      width: 918px;
+      height: 50px;
+      border-bottom: 1px solid #666;
+      /*background-color: gold; */
+      margin: 0 auto;
+    }
+
+    /*因为h3自带的margin，导致.pic_list_title上面存留一片空白,所以要么去除margin，要么将h3设置为float*/
+    .pic_list_title h3{
+      /*为什么在这里会设置浮动呢？为了让h3里的文字能够根据文字的长度而调整长度
+        因为浮动会将块元素转换成内联块元素，且内联块元素如果没有设置宽高，宽高由内容决定
+      */
+      float: left;
+      font:normal 18px/50px 'Micsoft Yahei';
+      margin: 0;
+      padding: 0 10px;
+      border-bottom: 2px solid red; 
+    }
+
+    .pic_list_wrap{
+      width: 918px;
+      margin: 20px auto 13px;
+      overflow: hidden;
+    }
+
+    .pic_list{
+      list-style: none;
+      padding: 0;
+      /*background-color: cyan; */
+      /*因为此处给的宽度足够宽，所以每行的最后一个元素不会换行*/
+      width: 950px;
+      /*margin: 20px auto;*/
+      /*因为此处没有用position，所以可以用overflow*/
+      overflow: hidden;
+    }
+
+    .pic_list li{
+      width: 160px;
+      height: 68px;
+      float: left;
+      margin:0 29px 25px 0;
+    }
+
+    /*此处a标签并没有写，因为此处a标签在包住图片时*/
+  </style>
+</head>
+<body>
+  <div class="pic_list_con">
+    <div class="pic_list_title">
+      <h3>图片展示</h3>
+    </div>
+
+    <!-- 为了解决每行的最后一个元素因为有边距刚好挨着ul的有边框，从而导致的最后一个元素换行的现象，在这里设置一个div包住ul
+      且再设置ul的宽度大于父级div的宽度，多余的部分用overflow:hidden，因为最后一个元素的边框刚好挨着div的右边框，所以图片
+      部分并没有被省略掉
+     -->
+     <div class="pic_list_wrap">
+    <ul class="pic_list">
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+      <li><a href="#"><img src="../images/goods.jpg" alt="商品图片"></a></li>
+    </ul>
+    </div>
+  </div>
+</body>
+</html>

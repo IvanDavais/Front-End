@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图片说明文字动画</title>
+  <style type="text/css">
+    .pic_con{
+      width: 200px;
+      height: 300px;
+      margin: 50px auto 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pic_info{
+      position: absolute;
+      padding: 10px;
+      left: 0;
+      top: 300px;
+      width: 180px;
+      height: 100px;
+      background-color: rgba(0,0,0,0.3);
+      color: #fff;
+      transition: all 1s ease;
+      font:normal 12px 'Microsoft Yahei';
+    }
+
+    .pic_con:hover .pic_info{
+      top: 180px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="pic_con">
+    <img src="../00images/banner01.jpg " alt="banner">
+    <div class="pic_info">
+      <h3>文字说明标题</h3>
+      <p>这是一段简单的文字说明标题，类似于水果的描述。</p>
+    </div>
+  </div>
+</body>
+</html>

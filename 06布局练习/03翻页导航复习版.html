@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>翻页导航复习版</title>
+  <style type="text/css">
+    .page{
+      /*1.清除默认样式*/
+      margin: 50px auto 0;
+      padding: 0;
+      list-style: none;
+      
+      /*2.设置宽高*/
+      height:40px;
+      width: 600px;
+      border: 1px solid #000;
+
+      /*！！！忘记点：行内块排列间隙问题*/
+      font-size: 0;
+
+      /*3.使li居中，思想利用行内块特点*/
+      text-align: center;
+    }
+
+    .page li{
+      display: inline-block;
+      height: 26px;
+      font-size: 12px;
+      /*line-height: 40px;*/
+      /*background-color: red;*/
+      margin: 7px 5px 0;
+    }
+    .page li a{
+      display: block;
+      height: 26px;
+      padding: 0 10px;
+      font:normal 12px/26px 'Micsoft Yahei';
+      text-decoration: none;
+      background-color: gold;
+    }
+    .page li a:hover{
+      color:red;
+      background-color: cyan;
+    }    
+  </style>
+</head>
+<body>
+  <ul class="page">
+    <li><a href="#">上一页</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><span>...</span></li>
+    <li><a href="#">17</a></li>
+    <li><a href="#">18</a></li>
+    <li><a href="#">19</a></li>
+    <li><a href="#">20</a></li>
+    <li><a href="#">下一页</a></li>
+  </ul>
+</body>
+</html>

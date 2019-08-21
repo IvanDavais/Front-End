@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .con{
+      width: 400px;
+      height: 400px;
+      border:1px solid #000;
+      margin:50px auto 0;
+      position: relative;
+    }
+    .box01, .box02{
+      width: 300px;
+      height: 100px;
+      margin:10px;
+    }
+
+    /*由此图看出设置了absolute属性的盒子会脱离原来的文档流
+      原来green应该再gold上面，现在gold直接接替了box01所在的原来的文档流
+    */
+    .box01{
+      background-color: green;
+      position: absolute;
+      top:40px;
+      left: 30px;
+    }
+    .box02{
+      background-color: gold; 
+    }
+  </style>
+</head>
+<body>
+    <div class="con">
+      <div class="box01"></div>
+      <div class="box02"></div>
+    </div>  
+</body>
+</html>
+

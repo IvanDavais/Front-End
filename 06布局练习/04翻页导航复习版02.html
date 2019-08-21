@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>翻页导航02</title>
+  <style type="text/css">
+    .box{
+      list-style: none;
+      margin: 50px auto 0;
+      padding: 0;
+
+      width:600px;
+      height: 40px;
+      border: 1px solid #000;
+      text-align: center;
+      font-size: 0;
+    }
+
+    .box li{
+      font-size: 12px;
+      display: inline-block;
+      height: 26px;
+      margin: 7px 5px;
+    }
+
+    .box li a{
+      display: block;
+      height: 26px;
+      font:normal 12px/26px 'Micsoft Yahei';
+      background-color: gold;
+      padding: 0px 10px;
+      text-decoration: none;
+    }
+
+    .box li a:hover{
+      background-color: cyan;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <ul class="box">
+    <li><a href="#">上一页</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><span>...</span></li>
+    <li><a href="#">17</a></li>
+    <li><a href="#">18</a></li>
+    <li><a href="#">19</a></li>
+    <li><a href="#">20</a></li>
+    <li><a href="#">下一页</a></li>
+  </ul>
+</body>
+</html>

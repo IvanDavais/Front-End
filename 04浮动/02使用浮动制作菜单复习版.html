@@ -1,0 +1,75 @@
+<!-- 
+1.通过chrome浏览器可以看出该列表有默认的margin和padding值，所以第一步，设置margin和padding值来覆盖系统默认值
+2.为ul标签设置宽度和高度，背景颜色，以便观察
+3.为li标签设置宽高，边框后会发现，相邻的li标签存在间隔，为了除去这个间隔将使用float:left. 
+此外，由于相邻的两个li之间存在边框重叠导致边框变宽，所以会使用margin-left=-1px 使整个导航栏整体向左偏移1px。
+在实际开发中，首页误差只要不超过3px就可以
+4.将a标签设置为block，且宽度等于li的宽度
+5.设置a标签中的文字大小，水平居中用text-align;垂直居中用line-height,去除下划线
+6.设置hover,bgcolor,以及字体颜色
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .menu{
+
+      /*1*/
+      padding:0;
+      margin:50px auto 0px;
+      
+      /*2*/
+      width: 694px;
+      height:50px;    
+      /*background-color: cyan;*/
+    }
+
+    .menu li{
+
+      /*3*/
+      width: 98px;
+      height: 48px;
+      border: 1px solid gold;
+      display: inline-block;
+      float: left;
+      margin-left: -1px;
+    }
+
+    .menu li a{
+
+      /*4*/
+      display: block;
+      width: 98px;
+
+      /*5*/
+      line-height: 48px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: 'Micsoft Yahei';
+      color: pink;
+    }
+    
+    .menu li a:hover{
+      /*6*/
+      background-color: gold;
+      color:#fff;
+    }
+
+  </style>
+</head>
+<body>
+<ul class="menu">
+    <li><a href="#">新闻列表</a></li>
+    <li><a href="#">新闻列表</a></li>
+    <li><a href="#">新闻列表</a></li>
+    <li><a href="#">新闻列表</a></li>
+    <li><a href="#">新闻列表</a></li>
+    <li><a href="#">新闻列表</a></li>
+    <li><a href="#">新闻列表</a></li>
+  </ul>  
+</body>
+</html>

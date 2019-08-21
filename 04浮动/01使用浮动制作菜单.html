@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .menu{
+      width:694px;
+      height: 50px;
+      background-color: cyan;
+
+      /*去掉小圆点*/
+      list-style: none;
+      /*自行设置margin来覆盖默认的margin*/
+      margin: 50px auto 0;
+      /*去掉padding*/
+      padding: 0;
+    }
+
+    .menu li{
+      width: 98px;
+      height: 48px;
+      border: 1px solid gold;
+      background-color: #fff;
+
+      /*display: inline-block;*/
+      float: left;
+
+      /*这样一来，整个导航会整体向左偏移一个像素，在首页验收时，误差只要不超过3px就可以，其他在5px之内就行*/
+      margin-left: -1px;
+    }
+
+    .menu li a{
+      text-decoration: none;
+      /*background-color: gold;*/
+      display: block;
+      weight: 98px;
+      height: 48px;
+      text-align: center;
+      line-height: 48px;
+      font-size: 16px;
+      font-family: 'Microsoft Yahei';
+      color: pink;
+
+    }
+
+    .menu li a:hover{
+      background-color: gold;
+      color:#fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- ul.menu>(li>a{公司简介}*7) -->
+  <ul class="menu">
+      <li><a href="#">公司简介</a></li>
+      <li><a href="#">公司简介</a></li>
+      <li><a href="#">公司简介</a></li>
+      <li><a href="#">公司简介</a></li>
+      <li><a href="#">公司简介</a></li>
+      <li><a href="#">公司简介</a></li>
+      <li><a href="#">公司简介</a></li>
+  </ul>  
+
+</body>
+</html>

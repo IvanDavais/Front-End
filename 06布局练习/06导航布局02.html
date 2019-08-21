@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>导航布局02</title>
+  <style type="text/css">
+    .box{
+      list-style: none;
+      margin: 50px auto 0;
+      padding: 0;
+
+      width: 960px;
+      height: 40px;
+      background-color: #00619f;
+      position: relative;
+    }
+
+    .box li{
+      float: left;
+      width:100px;
+      height: 40px;
+
+    }
+
+    .box li a{
+      display: block;
+      height: 40px;
+      font:normal 14px/40px 'Micsoft Yahei';
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .box li a:hover{
+      background-color: gold;
+    }
+
+    .box .new{
+      position: absolute;
+      background: url(../images/new.png) no-repeat;
+      left:434px;
+      top:-6px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="box">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">网站建设</a></li>
+    <li><a href="#">程序开发</a></li>
+    <li><a href="#">网络营销</a></li>
+    <li><a href="#">企业AI</a></li>
+    <li><a href="#">案例展示</a></li>
+    <li><a href="#">联系我们</a></li>
+    <li class="new"></li>
+  </ul>
+</body>
+</html>

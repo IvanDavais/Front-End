@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .new_title{
+      width: 400px;
+      height: 40px;
+      border-bottom: 1px solid #ff8200;
+
+      /*为什么总是只给margin-top，不给margin-buttom，是为了避免底部叠加*/
+      margin: 50px auto 0;
+    }
+    .new_title h3{
+      float: left;
+
+      /*由于h3本身自带margin，所以我们需要设置新的margin覆盖掉原来的margin值*/
+      width:80px;
+      height: 40px;
+      background-color: #ff8200;
+      margin:0;
+      font-size: 16px;
+      color:#fff;
+      text-align: center;
+      line-height: 40px;
+      font-weight: normal;
+
+    }
+    .new_title a{
+      /*内联元素在设置float后，变成了了块级元素，且可以设置宽高了*/
+      float: right;
+
+      /*在这里，宽度不用写，因为它会自己撑开*/
+      /*width: 80px;*/
+
+      /*这里的height也可以去掉，因为line-height已经写40px，所以此处可以省略不写*/
+      /*height: 40px;*/
+
+      line-height: 40px;
+
+      /*css中字体可以简写，顺序为：font-style | font-variant | font-weight | font-size | line-height | font-family*/
+      font:normal 14px/40px 'Microsoft Yahei';
+      color: #666;
+      text-decoration: none;
+    }
+
+    .new_title a:hover{
+      color:#ff8200;
+    }
+  </style>
+</head>
+<body>
+<div class="new_title">
+  <h3>新闻列表</h3>
+  <a href="#">更多&gt</a>
+</div>  
+</body>
+</html>

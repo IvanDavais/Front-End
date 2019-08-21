@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>翻页练习</title>
+   <style type="text/css">
+     /* 1.首先思考，ul有自己特有的样式，所以先要去掉这些默认样式 */
+     .pagenation{
+      list-style: none;
+      margin: 50px auto 0;
+      padding: 0;
+
+      /*2.设置它的宽高*/
+      width: 600px; 
+      height: 40px;
+      border: 1px solid #666;
+      font-size: 0;
+
+      /*!!! 如果子元素是行内块元素，父元素可以用text-align属性设置子元素的水平对齐方式*/
+      text-align: center;
+     }
+      
+      /*!!! 块元素有div ul li p h1-h6 dl dt dd */
+     .pagenation li{
+      /*---经过分析，不太适合用浮动来做，因为li的长度不固定，用浮动很难控制居中---*/
+      display: inline-block;
+      height: 26px;
+      
+      font-size: 12px;
+
+      /*---此处为什么不用line-height来做垂直居中呢？因为此处文字外头还有padding
+      ，如果只用line-height的话，只会让文字居中，而它文字上面的背景图依然没有居中---*/
+      /*line-height: 40px;*/ 
+
+      /*最后决定使用margin做垂直居中*/
+      margin: 7px 5px 0;
+     }
+    
+      /*---观察此时的图可以看出，页表的字没有垂直居中，且a元素是个内联元素，无法设置宽高，所以此处决定将内联元素
+      转化成块级元素，以便设置宽高，以及使它居中---*/
+      .pagenation li a{
+        display: block;
+        height: 26px;
+        /*line-height: 26px;*/
+        padding: 0px 10px;
+        text-decoration: none;
+        font:normal 12px/26px 'Microsoft Yahei';
+        color: #000;
+        background-color: gold;
+      }
+
+      .pagenation li a:hover{
+        color:#000;
+        background-color: cyan;
+      }
+      
+   </style>
+</head>
+<body>
+    <ul class="pagenation">
+      <li><a href="#">上一页</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li class="omit"><span>...</span></li>
+      <li><a href="#">17</a></li>
+      <li><a href="#">18</a></li>
+      <li><a href="#">19</a></li>
+      <li><a href="#">20</a></li>
+      <li><a href="#">下一页</a></li>
+    </ul>
+</body>
+</html>

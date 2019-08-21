@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation动画</title>
+  <style type="text/css">
+    @keyframes moving{
+      from{
+        width: 100px;
+        height: 100px
+        background-color: gold;
+      }
+      to{
+        width: 500px;
+        height: 500px;
+        background-color: red;
+      }
+    }
+
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: gold;
+      
+      animation: moving 1s ease 0s infinite alternate;
+      /*起始状态设置为paused,hover状态设置为running*/
+      animation-play-state: paused;
+
+    }
+
+    .box:hover{
+      /*动画状态：pause（暂停） running（运动）*/
+      animation-play-state: running;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
