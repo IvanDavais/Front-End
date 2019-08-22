@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>em单位</title>
+  <style type="text/css">
+    /*Although the width and the height of box01 and box02 are the same, 
+    the display of .box01 and .box02 is different because of em unit.
+
+    */
+
+    .box01{
+      /*Notice: The smallest font size on the web page is 12px.*/
+      font-size:15px;
+
+      /*The actual width of box01 is width plus font-size.*/
+      width: 20em;
+
+      /*The actual  of box01 is width plus font-size.*/
+      height: 10em;
+      background-color: gold;
+    }
+
+    .box02{
+      font-size: 20px;
+      width: 20em;
+      height: 10em;
+      background-color: green;
+    }
+
+    p{
+      text-indent: 2em;
+      /*text-indent:2*20px;*/
+      /*text-indent: 40px;*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box01"></div>
+  <br />
+  <br />
+
+  <div class="box02"></div>
+  <br />
+
+  <p>1em 等于当前的字体尺寸。
+
+2em 等于当前字体尺寸的两倍。
+
+例如，如果某元素以 12pt 显示，那么 2em 是24pt。
+
+在 CSS 中，em 是非常有用的单位，因为它可以自动适应用户所使用的字体</p>
+</body>
+</html>
