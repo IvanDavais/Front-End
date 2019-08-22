@@ -2,7 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- You need to add this sentence to suit for the mobile end. -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>FluidLayout</title>
+  <style type="text/css">
+    body{
+      margin: 0;
+    }
+
+    .con a{
+      display: block;
+
+      /*Method 1 : Use calc to solve the border setting problem*/
+      /*In the element A，we use the width minus the sum of the left and right margins 
+      as final width of element A.*/
+      /*width: calc(25% - 4px);*/
+
+
+      /*Method 2: box-sizing:border-box*/
+      /*The width and height properties include the content, padding, and border,
+       but do not include the margin. Note that padding and border will be inside of the box.
+       */
+      width: 25%;
+      box-sizing:border-box;
+
+
+      height: 100px;
+      background-color: gold;
+      text-align: center;
+      line-height: 100px;
+      float: left;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      border: 2px solid #000;
+    }
+  </style>
 </head>
 <body>
   <div class="con">
