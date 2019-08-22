@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Because rem represents the foot-size of the root element,
+  so we need set to the font-size of the root element -->
+<html lang="en" style="font-size: 30px">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .box01{
+      font-size:15px;
+      
+      /* rem: Represents the font-size of the root element (typically <html>). 
+      When used within the root element font-size,
+      it represents its initial value (a common browser default is 16px, 
+      but user-defined preferences may modify this).*/
+      width: 20rem;
+      height: 10rem;
+      background-color: gold;
+      margin: 1rem;
+    }
+
+    .box02{
+      font-size: 20px;
+      width: 20rem;
+      height: 10rem;
+      background-color: green;
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="box01"></div>
+  
+  <div class="box02"></div>
+</body>
+</html>
