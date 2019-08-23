@@ -1,0 +1,121 @@
+.main_wrap{
+  /*The element is removed from the normal document flow,
+   and no space is created for the element in the page layout. 
+   It is positioned relative to its closest positioned ancestor, if any; 
+   otherwise, it is placed relative to the initial containing block(body).*/
+  position: absolute;
+  /*background-color: gold;*/
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+}
+
+
+/*We can see the standard font-size is 20px in set_root.js
+which can dynamically adjust the font-size of web-page.
+When we use fluid layout to design the web-page, 
+we usually divide the original size by two to get the final size,
+because the size of the material map is usually twice the size of the web page. 
+
+why not here?
+
+Because in cssrem.sublime-setting, the px-to-em is 40px;
+This setting helps us automatically reduce the size of the original image by half. 
+*/
+.header{
+  height: 2.5rem;
+  /*height:2.5rem;===>height: 100px;*/
+  background-color: #37ab40;
+  position: relative;
+}
+
+.logo{
+  display: block;
+  width: 4.45rem;
+  height: 1.8rem;
+  margin: 0.35rem auto 0;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.search{
+  position: absolute;
+  width: 1.35rem;
+  height: 1.35rem;
+  right: 0.75rem;
+  top: 0.6rem;
+  background:  url(../img/icons.png) left top no-repeat;
+  background-size: 3.0rem 42.0rem;
+}
+
+
+/*Absolutely positioned and fixedly positioned block and inline elements 
+are automatically converted to inline block elements*/
+.center_con{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 2.5rem;
+  bottom: 2.5rem;
+  background-color: gold;
+/*Only vertical scroll bars appear, no horizontal scroll bars appear.*/
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.slide{
+  height: 7.0rem;
+}
+
+.slide img{
+  width: 100%;
+}
+
+.menu_con{
+  height: 9.25rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.menu_con ul{
+  width: 18rem;
+  /*width: 17.375rem;*/
+  height: 8.375rem;
+  margin:0.875rem 0 0 1.375rem;
+  /*background-color: gold;*/
+}
+
+.menu_con li{
+  /*width: 2.75rem;*/
+  width: 2.8rem;
+  height: 4.05rem;
+  float: left;
+  /*background-color: pink;*/
+  margin-right: 1.625rem;
+}
+
+.menu_con li a{
+  display: block;
+  height: 2.8rem;
+  background:  url(../img/icons.png) left -3.025rem no-repeat;
+  background-size: 3.0rem 42.0rem;
+}
+
+.menu_con li h2{
+  text-align: center;
+  
+}
+
+.footer_con{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: pink;
+}
