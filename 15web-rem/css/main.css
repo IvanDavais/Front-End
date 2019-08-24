@@ -1,9 +1,9 @@
 .main_wrap
 {
     /*The element is removed from the normal document flow,
-   and no space is created for the element in the page layout. 
-   It is positioned relative to its closest positioned ancestor, if any; 
-   otherwise, it is placed relative to the initial containing block(body).*/
+and no space is created for the element in the page layout.
+It is positioned relative to its closest positioned ancestor, if any;
+otherwise, it is placed relative to the initial containing block(body).*/
     position: absolute;
     top: 0;
     right: 0;
@@ -11,18 +11,14 @@
     /*background-color: gold;*/
     left: 0;
 }
-
-
 /*We can see the standard font-size is 20px in set_root.js
 which can dynamically adjust the font-size of web-page.
-When we use fluid layout to design the web-page, 
+When we use fluid layout to design the web-page,
 we usually divide the original size by two to get the final size,
-because the size of the material map is usually twice the size of the web page. 
-
+because the size of the material map is usually twice the size of the web page.
 why not here?
-
 Because in cssrem.sublime-setting, the px-to-em is 40px;
-This setting helps us automatically reduce the size of the original image by half. 
+This setting helps us automatically reduce the size of the original image by half.
 */
 .header
 {
@@ -33,7 +29,6 @@ This setting helps us automatically reduce the size of the original image by hal
 
     background-color: #37ab40;
 }
-
 .logo
 {
     display: block;
@@ -42,12 +37,10 @@ This setting helps us automatically reduce the size of the original image by hal
     height: 1.8rem;
     margin: .35rem auto 0;
 }
-
 .logo img
 {
     width: 100%;
 }
-
 .search
 {
     position: absolute;
@@ -60,9 +53,7 @@ This setting helps us automatically reduce the size of the original image by hal
     background: url(../img/icons.png) left top no-repeat;
     background-size: 3.0rem 42.0rem;
 }
-
-
-/*Absolutely positioned and fixedly positioned block and inline elements 
+/*Absolutely positioned and fixedly positioned block and inline elements
 are automatically converted to inline block elements*/
 .center_con
 {
@@ -77,18 +68,16 @@ are automatically converted to inline block elements*/
     overflow-y: auto;
 
     background-color: #eaeaea;
+    padding-bottom: 0.5rem;
 }
-
 .slide
 {
     height: 7.0rem;
 }
-
 .slide img
 {
     width: 100%;
 }
-
 .menu_con
 {
     overflow: hidden;
@@ -98,7 +87,6 @@ are automatically converted to inline block elements*/
 
     background-color: #fff;
 }
-
 .menu_con ul
 {
     width: 18rem;
@@ -107,7 +95,6 @@ are automatically converted to inline block elements*/
     margin: .6rem 0 0 1.375rem;
     /*background-color: gold;*/
 }
-
 .menu_con li
 {
     float: left;
@@ -118,7 +105,6 @@ are automatically converted to inline block elements*/
     /*background-color: pink;*/
     margin-right: 1.625rem;
 }
-
 .menu_con li a
 {
     display: block;
@@ -128,43 +114,34 @@ are automatically converted to inline block elements*/
     background: url(../img/icons.png) left -3.025rem no-repeat;
     background-size: 3.0rem 42.0rem;
 }
-
 .menu_con li:nth-child(2) a
 {
     background-position: left -6rem;
 }
-
 .menu_con li:nth-child(3) a
 {
     background-position: left -9rem;
 }
-
 .menu_con li:nth-child(4) a
 {
     background-position: left -12rem;
 }
-
 .menu_con li:nth-child(5) a
 {
     background-position: left -15rem;
 }
-
 .menu_con li:nth-child(6) a
 {
     background-position: left -18rem;
 }
-
 .menu_con li:nth-child(7) a
 {
     background-position: left -21rem;
 }
-
 .menu_con li:nth-child(8) a
 {
     background-position: left -24rem;
 }
-
-
 .menu_con li h2
 {
     font: bold 13px/1.25rem 'Microsoft Yahei';
@@ -175,7 +152,6 @@ are automatically converted to inline block elements*/
 
     color: #666;
 }
-
 .common_model
 {
     height: 17.25rem;
@@ -183,7 +159,6 @@ are automatically converted to inline block elements*/
 
     background-color: #fff;
 }
-
 .common_title
 {
     width: 17.75rem;
@@ -191,7 +166,6 @@ are automatically converted to inline block elements*/
     /*background-color: gold;*/
     margin: .8rem auto 0;
 }
-
 .common_title h3
 {
     font: bold 15px/.9rem 'Microsoft Yahei';
@@ -203,7 +177,6 @@ are automatically converted to inline block elements*/
     color: #fbc83d;
     border-left: .25rem solid #fbc83d;
 }
-
 .common_title a
 {
     font: normal 12px/.9rem 'Microsoft Yahei';
@@ -212,7 +185,6 @@ are automatically converted to inline block elements*/
 
     color: #7f7f7f;
 }
-
 .banner
 {
     display: block;
@@ -221,12 +193,10 @@ are automatically converted to inline block elements*/
     height: 4.5rem;
     margin: .5rem auto 0;
 }
-
 .banner img
 {
     width: 100%;
 }
-
 .goods_list
 {
     width: 17.75rem;
@@ -234,7 +204,6 @@ are automatically converted to inline block elements*/
     /*background-color: gold;*/
     margin: .5rem auto 0;
 }
-
 .goods_list li
 {
     position: relative;
@@ -248,12 +217,10 @@ are automatically converted to inline block elements*/
 
     border-right: 1px solid #e7e7e7e7;
 }
-
 .goods_list li:last-child
 {
     border-right: 0;
 }
-
 .goods_link
 {
     display: block;
@@ -262,7 +229,6 @@ are automatically converted to inline block elements*/
     height: 4.5rem;
     margin: .375rem auto 0;
 }
-
 .goods_list h4
 {
     font: normal 15px/15px 'Microsoft Yahei';
@@ -272,18 +238,16 @@ are automatically converted to inline block elements*/
     width: 5.0rem;
     margin: 37px auto 0;
     /*normal: Collapses white space as for normal,
-   but suppresses line breaks (text wrapping) within the source.*/
+but suppresses line breaks (text wrapping) within the source.*/
 
     white-space: nowrap;
     /*This keyword value will display an ellipsis to represent clipped text.*/
     text-overflow: ellipsis;
 }
-
 .goods_link img
 {
     width: 100%;
 }
-
 .unit
 {
     font: normal 12px/12px 'Microsoft Yahei';
@@ -293,7 +257,6 @@ are automatically converted to inline block elements*/
 
     color: #bbb;
 }
-
 .price
 {
     font: normal 12px/12px 'Microsoft Yahei';
@@ -303,7 +266,6 @@ are automatically converted to inline block elements*/
 
     color: #f40;
 }
-
 .add_chart
 {
     position: absolute;
@@ -316,8 +278,7 @@ are automatically converted to inline block elements*/
     background: url(../img/icons.png) left -27.0rem no-repeat;
     background-size: 3.0rem 42.0rem;
 }
-
-.footer_con
+.footer
 {
     position: absolute;
     bottom: 0;
@@ -327,4 +288,43 @@ are automatically converted to inline block elements*/
     height: 2.5rem;
 
     background-color: pink;
+}
+
+.footer li
+{
+    float: left;
+
+    width: 25%;
+    height: 2.5rem;
+}
+
+.footer li a
+{
+    display: block;
+
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: .35rem auto 0;
+
+    background: url(../img/icons.png) left -30.0rem no-repeat;
+    background-size: 3.0rem 42.0rem;
+}
+.footer li:nth-child(2) a
+{
+    background-position: left -33rem;
+}
+.footer li:nth-child(3) a
+{
+    background-position: left -36rem;
+}
+.footer li:nth-child(4) a
+{
+    background-position: left -39rem;
+}
+
+.footer li h2{
+  height: 0.8rem;
+  font:normal 12px/0.8rem 'Microsoft Yahei';
+  color: #949392;
+  text-align: center;
 }
